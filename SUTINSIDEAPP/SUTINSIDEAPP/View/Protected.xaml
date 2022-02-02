@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+               Title="ร้านที่ปลอดถัย"
+               BackgroundColor="#FF5E6B"
+             x:Class="SUTINSIDEAPP.View.Protected">
+    <ContentPage.Content>
+        <StackLayout>
+            <Frame  HasShadow="True" 
+                   BackgroundColor="White"                   
+BorderColor="#FEC5CA"
+CornerRadius="20"
+Margin="20"
+HeightRequest="200"
+WidthRequest="300"
+HorizontalOptions="Center"
+VerticalOptions="CenterAndExpand">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto"/>
+                        <ColumnDefinition Width=".5*"/>
+                    </Grid.ColumnDefinitions>
+                    <Label  Text="ร้านที่ปลอดภัย" FontSize="45" Grid.Column="0" Grid.RowSpan="2" HorizontalOptions="Center" TextColor="Black"/>
+
+                    <Image Source="/drawable/Under.png" Grid.Column="0" Grid.Row="1"/>
+                    <Label FontSize="Large" Text="ร้านแอนบะหมี่" Grid.Column="0" Grid.Row="2" HorizontalOptions="Center"/>
+
+                    <Button Text="เลือก"  Grid.Column="0" Grid.RowSpan="4"  Grid.Row="4" FontSize="Large" CornerRadius="10" BackgroundColor="#FF5E6B"/>
+
+
+                </Grid>
+            </Frame>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
